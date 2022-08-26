@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+    background: #000000;
+}
+.navigation{
+    background-color: #253b02;
+    display: flex;
+    flex-direction: row;
+    height: 3rem;
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline;
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+}
+.navbar li a:hover{
+    background-color: #586470;
+}
+.logo{
+    width: 3rem;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #fff;
+}
+.titulo h1{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+.titulo p{
+    color: #fff;
+    text-align: center;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos h3{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.producto{
+    display: block;
+    background-color: #343a40;
+    margin: 1rem;
+    max-width: min-content;
+    border-radius: 2rem;
+    text-align: center;
+}
+.producto img{
+    width: 20rem;
+    border-radius: 3rem;
+    margin: 1rem 1rem 0 1rem;
+}
+.producto h3{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.producto p{
+    color: #fff;
+    font-size: 1rem;
+}
+.botones{
+    display: inline;
+}
+.botones button{
+    border-radius: 0.5rem;
+    background-color: #253b02;
+    color: #fff;
+    font-size: 1rem;
+    bottom: 0;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #253b02;
+    list-style: none;
+}
+.footer li{
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+.footer li a{
+    text-decoration: none;
+    color: #fff;
+}
