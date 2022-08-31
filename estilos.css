@@ -6,6 +6,20 @@ body{
     font-size: 62.5%;
     background: #000000;
 }
+.whiteText{
+    color: #fff;
+    font-size: 1rem;
+}
+.container{
+    display: block;
+    max-width: 90%;
+    text-align: center;
+    margin: 2rem 2rem;
+}
+.container form, .container div{
+    background-color: #343a40;
+
+}
 .navigation{
     background-color: #253b02;
     display: flex;
@@ -58,7 +72,7 @@ body{
 }
 .producto img{
     width: 20rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     margin: 1rem 1rem 0 1rem;
 }
 .producto h3{
@@ -86,6 +100,9 @@ body{
     flex-direction: row;
     background-color: #253b02;
     list-style: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .footer li{
     margin-left: 1rem;
