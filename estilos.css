@@ -1,87 +1,105 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-size: 62.5%;
     background: #000000;
+    box-sizing: border-box;
 }
-.whiteText{
-    color: #fff;
-    font-size: 1rem;
-}
-.container{
-    display: block;
-    max-width: 90%;
-    text-align: center;
-    margin: 2rem 2rem;
-}
-.container form, .container div{
-    background-color: #343a40;
 
-}
-.navigation{
+.navigation {
     background-color: #253b02;
-    display: flex;
-    flex-direction: row;
     height: 3rem;
 }
-.navbar{
+
+.navbar {
     list-style: none;
 }
-.navbar li{
+
+.navbar li {
     display: inline;
-    font-size: 1.5rem;
-    margin: 1rem 1rem;
+    font-size: 1rem;
+    margin: 0.3rem 0.3rem;
 }
-.navbar li a:hover{
+
+.navbar li a:hover {
     background-color: #586470;
 }
-.logo{
+
+.responsiveNav {
+    display: none;
+}
+
+.logo {
     width: 3rem;
 }
-.navbar li a{
+
+.navbar li a {
     text-decoration: none;
     color: #fff;
 }
+
 .titulo h1{
     color: #fff;
+    text-align: center;
     font-size: 2rem;
-    text-align: center;
 }
-.titulo p{
+
+.whiteText {
     color: #fff;
-    text-align: center;
+    font-size: 1rem;
 }
-.productos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.productos h3{
-    color: #fff;
-    margin-bottom: 1rem;
-}
-.producto{
+
+.container {
     display: block;
-    background-color: #343a40;
-    margin: 1rem;
-    max-width: min-content;
-    border-radius: 2rem;
     text-align: center;
 }
-.producto img{
+
+.container form,
+.container div {
+    background-color: #343a40;
+}
+
+.container iframe{
+    max-width: 100%; 
+}
+#map{
+    margin: auto;
+}
+.titulo p {
+    color: #fff;
+    text-align: center;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 4%;
+}
+
+.producto {
+    display: block;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #343a40;
+    margin-bottom: 3rem;
+}
+
+.producto img {
     width: 20rem;
     border-radius: 2rem;
-    margin: 1rem 1rem 0 1rem;
 }
-.producto h3{
+
+.producto h3 {
+    font-size: 1.8rem;
     color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
 }
 .producto p{
-    color: #fff;
     font-size: 1rem;
 }
 .botones{
@@ -92,23 +110,90 @@ body{
     background-color: #253b02;
     color: #fff;
     font-size: 1rem;
-    bottom: 0;
+    
 }
-.footer{
+.footer {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     background-color: #253b02;
     list-style: none;
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 2rem;
 }
-.footer li{
+
+.footer li {
     margin-left: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
-.footer li a{
+
+.footer li a {
     text-decoration: none;
     color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+    .botones{
+        display: block;
+    }
+.botones button{
+    font-size: 1.3rem;
+}
+    .icono {
+        float: right;
+        font-size: 10px;
+        color: #fff;
+    }
+.producto h3{
+    font-size: 1.5rem;
+}
+.logo{
+    width: 4rem;
+    height: 3.3rem;
+}
+    .responsiveNav {
+        display: block;
+        width: 100%;
+        background-color: #253b02;
+        height: 3.5rem;
+        position: relative;
+    }
+
+    .responsiveNav i {
+        font-size: 2.8rem;
+        margin-right: 1rem;
+    }
+
+    .responsiveNavbar {
+        justify-content: center;
+        grid-template-columns: auto;
+        text-align: center;
+        list-style: none;
+        z-index: 2;
+        width: 100%;
+        height: max-content;
+        background-color: #253b02;
+    }
+
+    .responsiveNavbar li {
+        margin-top: 1rem;
+    }
+
+    .responsiveNavbar li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .inactivo {
+        display: none;
+    }
+
+    .activo {
+        display: grid;
+    }
 }

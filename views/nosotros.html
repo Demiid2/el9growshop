@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El 9 Fumeta - Growshop</title>
     <link rel="stylesheet" href="../estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../script.js"></script>
 </head>
+
 <body>
-<header>
-    <nav class="navigation"> 
-        <ul class="navbar">
-            <img class="logo" src="../img/logo.png" alt="logo de la pagina">            
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="./ubicacion.html">Ubicacion</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+    <header>
+        <nav class="navigation">
+            <ul class="navbar">
+                <img class="logo" src="../img/logo.png" alt="logo de la pagina">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="./ubicacion.html">Ubicacion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav class="responsiveNav">
+            <img class="logo" src="../img/logo.png" alt="logo de la pagina">
+            <i class="fa-solid fa-bars icono" onclick="responsiveMenu()"></i>
+            <ul class="responsiveNavbar inactivo" id="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="./ubicacion.html">Ubicacion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container whiteText bgColor">
+        <h1>¿Quiénes somos?</h1>
+        <p>Somos un equipo dedicado a llevarles productos de growshop al mejor precio del mercado.
+            Nos encontramos en crecimiento constante y brindando la mejor atención al público.
+        </p>
+        <h2>¿Qué ofrecemos?</h2>
+        <p>Actualmente brindamos una variedad de productos de calidad, a un precio accesible. Entre lo que te podemos
+            ofrecer están los picadores, bandejas, papelillos, y más. Para ver más dirigite a <a
+                href="./productos.html">Productos</a></p>
+        <h2>¿Hacemos envíos?</h2>
+        <p>Sí, consultá nuestros<a href="./ubicacion.html">Puntos de Encuento</a></p>
+        <h2>Formas de contacto</h3>
+            <p>Tenés nuestro contacto en <a href="./contacto.html">contacto</a></p>
+    </main>
+    <footer>
+        <ul class="footer">
+            <li>
+                <a href="./ubicacion.html"><i class="fa-solid fa-map-location"></i>Ubicacion</a>
+            </li>
+            <li>
+                <a href="https://instagram.com/el9growshop?igshid=YmMyMTA2M2Y="><i
+                        class="fa-brands fa-instagram"></i>Instagram</a>
+            </li>
+            <li>
+                <a href="https://wa.me/543447519224"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
+            </li>
         </ul>
-    </nav>
-</header>
-<main class="container whiteText bgColor">
-<h1>¿Quiénes somos?</h1>
-<p>Somos un equipo dedicado a llevarles productos de growshop al mejor precio del mercado.
-    Nos encontramos en crecimiento constante y brindando la mejor atención al público.
-</p>
-<h2>¿Qué ofrecemos?</h2>
-<p>Actualmente brindamos una variedad de productos de calidad, a un precio accesible. Entre lo que te podemos ofrecer están los picadores, bandejas, papelillos, y más. Para ver más dirigite a <a href="./productos.html">Productos</a></p>
-<h2>¿Hacemos envíos?</h2>
-<p>Sí, consultá nuestros<a href="./ubicacion.html">Puntos de Encuento</a></p>
-<h2>Formas de contacto</h3>
-<p>Tenés nuestro contacto en <a href="./contacto.html">contacto</a></p>
-</main>
-<footer>
-    <ul class="footer">
-        <li>
-            <a href="./ubicacion.html"><i class="fa-solid fa-map-location"></i>Ubicacion</a>
-        </li>
-        <li>
-            <a href="https://instagram.com/el9growshop?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i>Instagram</a>
-        </li>
-        <li>
-            <a href="https://wa.me/543447519224"><i class="fa-brands fa-whatsapp"></i>Whatsapp</a>
-        </li>
-    </ul>
-</footer>
+    </footer>
 </body>
+
 </html>
