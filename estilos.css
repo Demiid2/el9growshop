@@ -3,12 +3,19 @@
     padding: 0;
 }
 
-html{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(9,9,121,1) 76%, rgba(104,0,255,1) 100%);
+html {
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 6%,
+            rgba(9, 9, 121, 1) 76%,
+            rgba(104, 0, 255, 1) 100%);
 }
+
 body {
     font-size: 62.5%;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(9,9,121,1) 76%, rgba(104,0,255,1) 100%);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 6%,
+            rgba(9, 9, 121, 1) 76%,
+            rgba(104, 0, 255, 1) 100%);
     box-sizing: border-box;
 }
 
@@ -44,7 +51,11 @@ body {
     color: #fff;
 }
 
-.titulo h1{
+.titulo {
+    z-index: 1;
+}
+
+.titulo h1 {
     color: #fff;
     text-align: center;
     font-size: 2rem;
@@ -65,12 +76,14 @@ body {
     background-color: #343a40;
 }
 
-.container iframe{
-    max-width: 100%; 
+.container iframe {
+    max-width: 100%;
 }
-#map{
+
+#map {
     margin: auto;
 }
+
 .titulo p {
     color: #fff;
     text-align: center;
@@ -83,6 +96,7 @@ body {
     justify-content: space-around;
     width: 90%;
     margin-left: 4%;
+    z-index: 1;
 }
 
 .producto {
@@ -102,19 +116,22 @@ body {
     font-size: 1.8rem;
     color: #fff;
 }
-.producto p{
+
+.producto p {
     font-size: 1rem;
 }
-.botones{
+
+.botones {
     display: inline;
 }
-.botones button{
+
+.botones button {
     border-radius: 0.5rem;
     background-color: #253b02;
     color: #fff;
     font-size: 1rem;
-    
 }
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -140,30 +157,35 @@ body {
     .navigation {
         display: none;
     }
-    .botones{
+
+    .botones {
         display: block;
     }
-.botones button{
-    font-size: 1.3rem;
-}
+
+    .botones button {
+        font-size: 1.3rem;
+    }
+
     .icono {
         float: right;
         font-size: 10px;
         color: #fff;
     }
-.producto h3{
-    font-size: 1.5rem;
-}
-.logo{
-    width: 4rem;
-    height: 3.3rem;
-}
+
+    .producto h3 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 3.3rem;
+    }
+
     .responsiveNav {
         display: block;
         width: 100%;
         background-color: #253b02;
         height: 3.5rem;
-        position: relative;
     }
 
     .responsiveNav i {
@@ -176,7 +198,7 @@ body {
         grid-template-columns: auto;
         text-align: center;
         list-style: none;
-        z-index: 2;
+        z-index: 5;
         width: 100%;
         height: max-content;
         background-color: #253b02;
@@ -198,5 +220,6 @@ body {
 
     .activo {
         display: grid;
+        position: absolute;
     }
 }
