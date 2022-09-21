@@ -1,12 +1,28 @@
+html {
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 6%,
+            rgba(9, 9, 121, 1) 76%,
+            rgba(104, 0, 255, 1) 100%);
+}
 body {
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 6%,
+            rgba(9, 9, 121, 1) 76%,
+            rgba(104, 0, 255, 1) 100%);
+    font-size: 62.5%;
     margin: 0;
     box-sizing: border-box;
 }
 .logo{
     width: 2rem;
 }
+.card-body, .card{
+    background-color: #464646;
+}
+
 .carouselBs {
-    width: 50%;
+    width: 40%;
+    max-height: 400px;
     text-align: center;
 }
 .text-center{
@@ -21,6 +37,12 @@ footer{
     bottom: 0;
     position: fixed;
 }
+p, a, h5, li{
+    font-size: 1rem;
+}
+p, a, h5, h2, h3, li, h1, .nav-link{
+    color: #ffff;
+}
 footer li{
     display: inline-block;
     list-style: none;
@@ -29,4 +51,19 @@ footer li a{
     margin-left: 1rem;
     text-decoration: none;
     color: white;
+}
+@media screen and (max-width: 300px) {
+    .carouselBs{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .carouselBs{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 722px) {
+    .carouselBs{
+        width: 80%;
+    }
 }
