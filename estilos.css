@@ -12,3 +12,21 @@ body {
 .text-center{
     text-align: center;
 }
+.bg-green{
+    background: #0c3d0c;
+}
+footer{
+    width: 100%;
+    background-color: #0c3d0c;
+    bottom: 0;
+    position: fixed;
+}
+footer li{
+    display: inline-block;
+    list-style: none;
+}
+footer li a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: white;
+}
