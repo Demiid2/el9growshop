@@ -4,95 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>El 9 Fumeta - Growshop</title>
-    <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./estilos.css">
 </head>
+
 <body>
     <header>
-        <nav class="navigation">
-            <ul class="navbar">
-                <img class="logo" src="./img/logo.png" alt="logo de la pagina">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./views/productos.html">Productos</a></li>
-                <li><a href="./views/nosotros.html">Nosotros</a></li>
-                <li><a href="./views/ubicacion.html">Ubicacion</a></li>
-                <li><a href="./views/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <nav class="responsiveNav">
-            <img class="logo" src="./img/logo.png" alt="logo de la pagina">
-            <i class="fa-solid fa-bars icono" onclick="responsiveMenu()"></i>
-            <ul class="responsiveNavbar inactivo" id="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./views/productos.html">Productos</a></li>
-                <li><a href="./views/nosotros.html">Nosotros</a></li>
-                <li><a href="./views/ubicacion.html">Ubicacion</a></li>
-                <li><a href="./views/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img class="logo navbar-brand" src="./img/logo.png" alt="logo de la pagina">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./views/productos.html" class="nav-link">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./views/nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./views/ubicacion.html" class="nav-link">Ubicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./views/contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="titulo">
+    <main class="carouselBs container-fluid">
         <h1>El 9 Growshop</h1>
-        <div class="productos animate__animated animate__backInUp">
-            <div class="producto">
-                <h3>Bong de acrilico</h3>
-                <img src="./img/productos/bong-acrilico.png" alt="Bong de acrilico">
-                <p>descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam dicta commodi ad
-                    ratione nam, quasi, </p>
-                <div class="botones">
-                    <button>Ver Producto</button>
-                    <button>Preguntar Stock</button>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 0"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./img/productos/bic-chico.png" class="d-block w-100" alt="Bic encendedor chico">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bic Chico</h5>
+                        <p>$50</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/productos/bong-acrilico.png" class="d-block w-100" alt="Bong de acrilico">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bong de tipo acrilico</h5>
+                        <p>$220</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/productos/pipa-encendedor.png" class="d-block w-100" alt="Encendedor tipo pipa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Encendedor tipo pipa</h5>
+                        <p>$10</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/productos/encendedor-clipper.png" class="d-block w-100" alt="encendedor clipper">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Encendedor tipo clipper</h5>
+                        <p>$100</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/productos/encendedor-usb.png" class="d-block w-100" alt="encendedor usb">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Encendedor tipo usb recargable</h5>
+                        <p>$120</p>
+                    </div>
                 </div>
             </div>
-            <div class="producto">
-                <h3>Pipa encendedor</h3>
-                <img src="./img/productos/pipa-encendedor.png" alt="Pipa encendedor">
-                <p>descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam dicta commodi ad
-                    ratione nam, quasi, </p>
-                <div class="botones">
-                    <button>Ver Producto</button>
-                    <button>Preguntar Stock</button>
-                </div>
-            </div>
-            <div class="producto">
-                <h3>Encendedor usb</h3>
-                <img src="./img/productos/encendedor-usb.png" alt="encendedor usb">
-                <p>descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam dicta commodi ad
-                    ratione nam, quasi, </p>
-                <div class="botones">
-                    <button>Ver Producto</button>
-                    <button>Preguntar Stock</button>
-                </div>
-            </div>
-            <div class="producto">
-                <h3>Encendedor clipper</h3>
-                <img src="./img/productos/encendedor-clipper.png" alt="encendedor clipper">
-                <p>descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam dicta commodi ad
-                    ratione nam, quasi, </p>
-                <div class="botones">
-                    <button>Ver Producto</button>
-                    <button>Preguntar Stock</button>
-                </div>
-            </div>
-            <div class="producto">
-                <h3>Bic chico</h3>
-                <img src="./img/productos/bic-chico.png" alt="Bic chico">
-                <p>descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam dicta commodi ad
-                    ratione nam, quasi, </p>
-                <div class="botones">
-                    <button>Ver Producto</button>
-                    <button>Preguntar Stock</button>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
     <footer>
