@@ -49,6 +49,13 @@ footer li{
 .card{
     width: 18rem;
 }
+.btn{   
+    border: #464646;
+}
+.row div div a{
+    background-color: #1e2f02;
+    color: #ffffff;
+}
 footer li a{
     margin-left: 1rem;
     text-decoration: none;
