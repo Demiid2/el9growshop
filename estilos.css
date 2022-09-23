@@ -22,7 +22,6 @@ body {
 
 .carouselBs {
     width: 40%;
-    max-height: 400px;
     text-align: center;
 }
 .text-center{
@@ -46,6 +45,9 @@ p, a, h5, h2, h3, li, h1, .nav-link{
 footer li{
     display: inline-block;
     list-style: none;
+}
+.card{
+    width: 18rem;
 }
 footer li a{
     margin-left: 1rem;
