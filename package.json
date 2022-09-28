@@ -1,0 +1,23 @@
+{
+  "name": "el9growshop",
+  "version": "1.0.0",
+  "description": "Version de [Mobile](https://wireframe.cc/qEA0Jn \"Mobile\") Version de [Desktop](https://wireframe.cc/zPpPmR \"Desktop\")",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Demiid2/el9growshop.git"
+  },
+  "author": "Demian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Demiid2/el9growshop/issues"
+  },
+  "homepage": "https://github.com/Demiid2/el9growshop#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
