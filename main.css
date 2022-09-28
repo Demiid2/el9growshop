@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: linear-gradient(90deg, #020024 6%, #090979 76%, #6800ff 100%); }
+
+body {
+  font-size: 62.5%;
+  background: linear-gradient(90deg, #020024 6%, #090979 76%, #6800ff 100%);
+  box-sizing: border-box; }
+
+.titulo h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem; }
+
+.titulo p {
+  color: #fff;
+  text-align: center; }
+
+.whiteText {
+  color: #fff;
+  font-size: 1rem; }
+
+.container {
+  display: block;
+  text-align: center; }
+  .container iframe {
+    max-width: 100%; }
+
+.container form,
+.container div {
+  background-color: #343a40; }
+
+#map {
+  margin: auto; }
+
+.navigation {
+  background-color: #253b02;
+  height: 3rem; }
+
+.navbar {
+  list-style: none; }
+  .navbar li {
+    display: inline;
+    font-size: 1rem;
+    margin: 0.3rem 0.3rem; }
+  .navbar a:hover {
+    background-color: #586470; }
+  .navbar a {
+    text-decoration: none;
+    color: #fff; }
+
+.responsiveNav {
+  display: none; }
+
+.logo {
+  width: 3rem; }
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  justify-content: space-around;
+  width: 90%;
+  margin-left: 4%;
+  z-index: 1; }
+  .productos .producto {
+    display: block;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #343a40;
+    margin-bottom: 3rem; }
+    .productos .producto img {
+      width: 20rem;
+      border-radius: 2rem; }
+    .productos .producto h3 {
+      font-size: 1.8rem;
+      color: #fff; }
+    .productos .producto p {
+      font-size: 1rem; }
+  .productos .botones {
+    display: inline; }
+    .productos .botones button {
+      border-radius: 0.5rem;
+      background-color: #253b02;
+      color: #fff;
+      font-size: 1rem; }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #253b02;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem; }
+  .footer li {
+    margin-left: 1rem;
+    font-size: 1.3rem; }
+  .footer a {
+    text-decoration: none;
+    color: #fff; }
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none; }
+  .botones {
+    display: block; }
+    .botones button {
+      font-size: 1.3rem; }
+  .icono {
+    float: right;
+    font-size: 10px;
+    color: #fff; }
+  .producto h3 {
+    font-size: 1.5rem; }
+  .logo {
+    width: 4rem;
+    height: 3.3rem; }
+  .responsiveNav {
+    display: block;
+    width: 100%;
+    background-color: #253b02;
+    height: 3.5rem; }
+    .responsiveNav i {
+      font-size: 2.8rem;
+      margin-right: 1rem; }
+  .responsiveNavbar {
+    justify-content: center;
+    grid-template-columns: auto;
+    text-align: center;
+    list-style: none;
+    z-index: 5;
+    width: 100%;
+    height: max-content;
+    background-color: #253b02; }
+    .responsiveNavbar li {
+      margin-top: 1rem; }
+    .responsiveNavbar a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem; }
+    .responsiveNavbar .inactivo {
+      display: none; }
+    .responsiveNavbar .activo {
+      display: grid;
+      position: absolute; } }

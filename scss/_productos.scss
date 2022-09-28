@@ -1,0 +1,35 @@
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 4%;
+    z-index: 1;
+.producto {
+    display: block;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: #343a40;
+    margin-bottom: 3rem;
+img {
+    width: 20rem;
+    border-radius: 2rem;
+}
+h3 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+p {
+    font-size: 1rem;
+}
+}
+.botones {
+    display: inline;
+button {
+    border-radius: 0.5rem;
+    background-color: #253b02;
+    color: #fff;
+    font-size: 1rem;
+}}}

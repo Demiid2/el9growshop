@@ -1,0 +1,61 @@
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .botones {
+        display: block;
+    button {
+        font-size: 1.3rem;
+    }
+    }
+    .icono {
+        float: right;
+        font-size: 10px;
+        color: #fff;
+    }
+
+    .producto h3 {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 3.3rem;
+    }
+
+    .responsiveNav {
+        display: block;
+        width: 100%;
+        background-color: #253b02;
+        height: 3.5rem;
+i {
+        font-size: 2.8rem;
+        margin-right: 1rem;
+    }}
+
+    .responsiveNavbar {
+        justify-content: center;
+        grid-template-columns: auto;
+        text-align: center;
+        list-style: none;
+        z-index: 5;
+        width: 100%;
+        height: max-content;
+        background-color: #253b02;
+    li {
+        margin-top: 1rem;
+    }a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .inactivo {
+        display: none;
+    }
+    .activo {
+        display: grid;
+        position: absolute;
+    }
+}}
